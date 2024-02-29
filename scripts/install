@@ -1,0 +1,2 @@
+#!/bin/bash
+yunohost settings set security.ssh.port -p $YNH_APP_ARG_SSH_PORT

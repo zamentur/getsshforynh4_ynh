@@ -1,0 +1,41 @@
+{
+    "name": "SSH Port",
+    "id": "sshport",
+    "packaging_format": 1,
+    "description": {
+        "en": "Change ssh port on yunohost 4 when you only have access to webadmin"
+    },
+    "version": "1.0~ynh1",
+    "url": "https://example.com",
+    "upstream": {
+        "license": "AGPL-3",
+        "website": "https://example.com",
+        "demo": "https://demo.example.com",
+        "admindoc": "https://yunohost.org/packaging_apps",
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://some.forge.com/example/example"
+    },
+    "license": "AGPL-3",
+    "maintainer": {
+        "name": "ljf"
+    },
+    "requirements": {
+        "yunohost": ">= 4.0.0"
+    },
+    "multi_instance": false,
+    "services": [
+    ],
+    "arguments": {
+        "install": [
+            {
+                "name": "ssh_port",
+                "type": "integer"
+                "ask": {
+                    "en": "Which SSH port do you want to configure ?"
+                },
+                "default": 22
+            }
+        ]
+    }
+}
+
